@@ -1,0 +1,494 @@
+/* start the templete 
+
+ name: friends code
+ by: abo bakr eid
+ end the templete 
+*/
+
+ body
+ {
+ 	font-family: Arial, sans-serif;
+   background-color: rgba(29, 22, 13,1);
+ }
+ 
+ .overflow{
+	 overflow: hidden;
+ }
+/* start the header */
+.head
+{
+	background: url("../images/01.jpeg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.head .overlo
+{
+  background-color: rgba(29, 22, 13, 0.9);
+  padding: 15% 30%;
+}
+
+.head .overlo .text
+{
+	border: 10px solid #856120;
+	padding: 5%;
+}
+
+.head .overlo .text h4
+{
+	color: white;
+	margin: 0;
+}
+
+.head .overlo .text span
+{
+	display: inline-block;
+	height: 3px;
+	width: 50px;
+	background-color: white; 
+}
+
+.head .overlo .text h1
+{
+  font-size: 100px;
+  text-transform: capitalize;
+  margin: 0;
+  color: white;
+}
+
+.head .overlo .text p
+{
+  color: #856120;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px)
+{
+	.head .overlo
+	{
+	  background-color: rgba(29, 22, 13, 0.9);
+	  padding: 20% 7%;
+	}
+	
+	.head .overlo .text h1
+	{
+	  font-size: 70px;
+	}	
+}
+
+/* end the header */
+/* start the About me */
+
+.about
+{
+	padding: 50px 0;
+	color: white;
+} 
+
+.about .row
+{
+   padding: 10px 5px;
+   width: 90%;
+   margin: auto;
+	background-color: #2b2525;
+	position: relative;
+} 
+
+.about .row .me
+{
+   padding: 10px;
+   margin-right: 5%;
+   width: 50%;
+   float: left;
+}
+
+.about .row .me > h2
+{
+  color: #856120;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.about .row .me > span
+{
+  display: inline-block;
+  height: 3px;
+  width: 21%;
+  background-color: #856120;
+}
+
+.about .row .me button
+{
+   padding: 8px 15px;
+   text-transform: capitalize;
+   color: #856120;
+   border: 1px solid #856120;
+   background: none; 
+   cursor: pointer;
+   position: relative; 
+}
+
+.about .row .me button span:last-of-type
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 3px;
+  background-color: white; 
+  -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+}
+
+.about .row .me button:hover span:last-of-type
+{
+  height: 100%;
+}
+
+.about .row .img
+{
+	float: right;
+	width: 45%;
+    position: relative;
+    height: 100%;
+}  
+
+.about .row .img img
+{
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    width: 100%;
+    height: 700px;
+}
+
+
+
+@media(max-width: 991px)
+{   
+	.about .row .img
+	{
+		position: static;
+        float: none;
+        width: 100%; 
+	}  
+    
+	.about .row .img img
+	{
+		position: static;
+        float: none;
+        width: 100%; 
+	}     
+	
+	.about .row .me
+	{
+        padding: 10px;
+		width: 100%;
+        float: none;
+
+	}	
+	
+}
+
+/* end the About me */
+/* start the lastest articles*/
+
+.lastest
+{
+	padding: 30px 0;
+}
+
+.lastest .container > h2
+{
+	color: #856120;
+	margin: 10px 0;
+	font-size: 46px;
+	text-transform: capitalize;
+}
+
+.lastest .container > span
+{
+	background-color: #856120;
+	display: inline-block;
+	height: 5px;
+	width: 11%;
+	margin-left: 38%;
+	margin-bottom: 20px;
+}
+
+.lastest .row .last
+{
+	width: 28%;
+}
+
+.lastest .row .last:nth-of-type(2)
+{
+	padding-top: 50px; 
+}
+
+.lastest .row .last > div
+{
+	background-color: #2b2525;
+}
+
+.lastest .row .last > div > img
+{
+	position: relative;
+	top: 18px;
+	left: 25px;
+}
+
+.lastest .row .last > h5
+{
+	color: #856120;
+	margin-top: 50px;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.lastest .row .last > span:first-of-type
+{
+	display: block;
+	height: 3px;
+	background-color: #856120; 
+}
+
+.lastest .row .last > p
+{
+  color: white;
+}
+
+.lastest .row .last > span:last-of-type
+{
+	display: inline-block;
+	color: #856120; 
+	text-transform: capitalize;	
+}
+
+.lastest .row .last > i
+{
+	color: #856120; 
+	cursor: pointer;
+}
+
+@media(max-width: 768px)
+{
+	.lastest .row 
+	{
+     display: block;
+	}
+
+	.lastest .row .last
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}	
+	
+	.lastest .row .last:nth-of-type(2)
+	{
+		padding-top: 0; 
+	}	
+	
+	.lastest .row .last > div > img
+	{
+		left: 5%;
+	}	
+	
+}
+
+@media(min-width: 769px) and (max-width: 1199px)
+{
+	.lastest .row 
+	{
+     display: block;
+	}
+
+	.lastest .row .last
+	{
+		width: 43%;
+		margin-right: 6%;
+		display: inline-block;
+		margin-bottom: 20px;
+	}	
+	
+	.lastest .row .last:nth-of-type(2)
+	{
+		padding-top: 0; 
+	}	
+}
+
+/* end the lastest articles */
+/* start the gallery */
+
+.gallery
+{
+	padding: 50px 0;
+}
+
+.gallery .container > h2
+{
+	color: #856120;
+	margin: 10px 0;
+	font-size: 46px;
+	text-transform: capitalize;
+}
+
+.gallery .container > span
+{
+	background-color: #856120;
+	display: inline-block;
+	height: 5px;
+	width: 11%;
+	margin-bottom: 20px;
+}
+
+.gallery .row > div:not(:last-of-type) > img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.gallery .row > div:not(:last-of-type)
+{
+	float: left;
+}
+
+/* end the gallery */
+/* start the contact */
+
+.contact
+{
+	padding: 50px;
+}
+
+.contact .row
+{
+	background-color: #2b2525; 
+	padding-left: 100px; 
+}
+
+.contact .row .img
+{
+	background-color: #2b2525; 
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.contact .row .img img
+{
+  width: 100%;
+  position:  absolute;
+  top: -40px;
+  height: 514px;
+  border-top-right-radius: 20px;
+}
+
+.contact .row .contac
+{
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+
+.contact .row .contac h2
+{
+	color: #856120;
+	margin: 10px 0;
+	font-size: 35px;
+}
+
+.contact .row .contac span
+{
+	background-color: #856120;
+	display: inline-block;
+	height: 5px;
+	width: 11%;
+	margin-bottom: 20px;
+}
+
+.contact .row .contac form input
+{
+   background: none;
+   border: none;
+   padding: 15px 8px;
+   width: 100%;
+   color: white;
+   margin-bottom: 10px;
+   border-bottom: 2px solid #856120;
+}
+
+.contact .row .contac form textarea
+{
+   background: none;
+   border: none;
+   padding: 15px 8px;
+   width: 100%;
+   color: white;
+   border-bottom: 2px solid #856120;
+}
+
+.contact .row .contac button
+{
+   background: none;
+   padding: 8px 15px;
+   color: white;
+   cursor: pointer;
+   border: 2px solid #856120;
+   margin: 20px 0;
+   color: #856120;
+}
+
+
+@media(max-width: 991px)
+{
+	.contact .row
+	{
+    padding-left: 0; 
+	}  
+  
+	.contact .row .img
+	{
+		width: 100%;
+		float: none;
+		position: static;
+	}
+	
+	.contact .row .contac
+	{
+	  width: 100%;
+	  float: none;
+	}	
+
+	.contact .row .img img
+	{
+	  position: static;
+	}	
+	
+}
+
+/* end the contact */
+/* start the social media */
+
+.social
+{
+	padding: 20px;
+	margin-top: 50px;
+}
+
+.social a 
+{
+  display: inline-block;
+  color: #856120;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.social a i
+{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 2px solid #856120;
+}
+
+/* end the social media */
